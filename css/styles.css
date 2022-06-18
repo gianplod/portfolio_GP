@@ -15,11 +15,10 @@ body{
 
 .body__homePage {
 
-    background-image: url("../images/home_background.jpg");
+    background-image: url("../images/home_background_2.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    background-position:center;
-    padding: 0 auto 0 auto;
+    background-position:top;
 }
 
 /* ------------------------------------ HEADER ------------------------------------ */
@@ -90,13 +89,13 @@ body{
 .content__welcomeText {
 
     font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-    width: 40%;
+    font-size: 1.7em;
+    width: 50%;
     text-align: justify;
     margin: 0.5rem ;
     padding: 2rem 2rem 6rem 4rem;
-    line-height: 1.7em;
-    color: #F5F5F5;
+    line-height: 1.8em;
+    color: #000000;
 
 }
 
@@ -107,7 +106,7 @@ body{
     font-style: italic;
     font-weight: 400;
     font-size: 1.1em;
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
 }
 

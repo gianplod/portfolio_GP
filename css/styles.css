@@ -1,0 +1,150 @@
+/* ------------------------------------ RESET CSS ------------------------------------ */ 
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------ BODY ------------------------------------ */ 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 13, 13);
+    
+}
+
+.body__homePage {
+
+    background-image: url("../images/home_background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    padding: 0 auto 0 auto;
+}
+
+/* ------------------------------------ HEADER ------------------------------------ */
+
+
+.header__main {
+
+    display:flex;
+    flex-direction: row;
+    background-image:linear-gradient(#9a0414, #560303);
+    /* background-image: linear-gradient(rgb(2, 2, 2),  rgb(20, 13, 13)); */
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.header__logo img{
+
+    height: 4rem;
+    width: 5rem;
+    padding: 2rem;
+    
+}
+
+.header__navList {
+
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+.header__navList li {
+
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    
+    
+    
+}
+
+.header__navList a {
+
+    text-decoration: none;
+    color: #F5F5F5;
+    
+}
+
+/* ------------------------------------ MAIN ------------------------------------ */
+
+
+
+.content {
+
+    display: flex;
+    
+}
+
+.content h2 {
+    
+    padding-bottom: 1rem;
+    
+}
+
+.content__welcomeText {
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    width: 40%;
+    text-align: justify;
+    margin: 0.5rem ;
+    padding: 2rem 2rem 6rem 4rem;
+    line-height: 1.7em;
+    color: #F5F5F5;
+
+}
+
+
+.content__motto {
+
+    color: #d61225;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+.content__nextPage {
+
+    display: none; /* hidden for now */
+}
+
+
+/* ------------------------------------ FOOTER ------------------------------------ */
+
+footer {
+
+    margin-top:auto;
+}
+
+.footer__main {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-image: linear-gradient(360deg,rgb(2, 2, 2), rgb(20, 13, 13)); */
+    align-items: center;
+    background-image: linear-gradient(360deg, #9a0414, #560303);
+    font-family: 'Montserrat', sans-serif;
+    color: #F5F5F5;
+    
+
+    
+}
+
+.footer__main p {
+    padding:0.5rem;
+}
+
+.footer__icons img {
+
+    padding:0.5rem 2rem 0.5rem 2rem;
+    width: 50px;
+}

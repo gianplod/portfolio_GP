@@ -9,7 +9,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(20, 13, 13);
+    background-color: #F5F5F5;
     
 }
 
@@ -74,19 +74,19 @@ body{
 
 
 
-.content {
+.contentHome {
 
     display: flex;
     
 }
 
-.content h2 {
+.contentHome h2 {
     
     padding-bottom: 1rem;
     
 }
 
-.content__welcomeText {
+.contentHome__welcomeText {
 
     font-family: 'Montserrat', sans-serif;
     font-size: 1.7em;
@@ -100,7 +100,7 @@ body{
 }
 
 
-.content__motto {
+.contentHome__motto {
 
     color: #d61225;
     font-style: italic;
@@ -110,8 +110,25 @@ body{
     text-align: center;
 }
 
+.contentContact {
 
-.content__nextPage {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+}
+
+.contentContact h1{
+
+    padding-bottom: 1rem;
+
+}
+
+.contentContact__form {
+
+    display: flex;
+}
+
+.content__navPage {
 
     display: none; /* hidden for now */
 }

@@ -34,7 +34,22 @@ body{
     justify-content: space-between;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    position: fixed;
 
+
+
+}
+
+.header__logo {
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: lighter;
+    color:white;
 }
 
 .header__logo img{
@@ -44,6 +59,7 @@ body{
     padding: 2rem;
     
 }
+
 
 .header__navList {
 
@@ -72,11 +88,31 @@ body{
 
 /* ------------------------------------ MAIN ------------------------------------ */
 
+.pageSection {
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+    padding: 2rem;
+}
+
+
+.content__navPage {
+
+    display: none; /* hidden for now */
+}
+
 
 /* -------------- HOME -------------- */
+
+
 .contentHome {
 
     display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:5%;
     
 }
 
@@ -111,89 +147,10 @@ body{
     text-align: center;
 }
 
-/* -------------- CONTACT -------------- */
-
-#contact {
-    
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:600;
-    padding: 2rem;
-
-}
-
-#contact h1{
-
-    padding-bottom: 1rem;
-
-}
-
-.form {
-
-    display: flex;
-    flex-direction: column;
-    border: solid 1px black;
-    border-radius:1rem;
-    padding: 1rem;
-}
-
-.form label {
-
-    width:20%;
-    padding: 0 0.5rem 0 0.5rem;
-    
-}
-
-.form input {
-
-    width:100%;
-    height: 2rem;
-    border-radius: 0.5rem;
-    
-}
-
-.form textarea {
-
-    width:100%;
-    margin-left: -10%;
-    border-radius: 0.5rem;
-}
-
-.form__nameData {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.form__contactData {
-
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    justify-content: space-around;
-
-}
-
-.form__message {
-
-    display: flex;
-    padding: 1rem;
-
-}
 
 
 /* -------------- ABOUT -------------- */
 
-#about {
-
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    padding: 2rem;
-}
 
 .contentAbout {
 
@@ -222,13 +179,6 @@ body{
 
 /* -------------- SERVICES -------------- */
 
-#services {
-
-    display: flex;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    padding:2rem;
-}
 
 .contentServices__list {
 
@@ -281,12 +231,111 @@ body{
 
 }
 
+/* -------------- PROJECTS -------------- */ 
 
 
 
-.content__navPage {
+.contentProjects {
 
-    display: none; /* hidden for now */
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+
+
+}
+
+.contentProjects h3 {
+
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+
+}
+
+.contentProjects img {
+
+    height: 200px;
+
+}
+
+
+.contentProjects__listItem {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.contentProjects__listItem p{
+
+    text-align: justify;
+    padding: 1rem;
+}
+
+/* -------------- CONTACT -------------- */
+
+
+#contact h1{
+
+    padding-bottom: 1rem;
+
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-radius:1rem;
+    padding: 1rem;
+    font-weight: 600;
+    
+}
+
+.form label {
+
+    width:20%;
+    padding: 0 0.5rem 0 0.5rem;
+    
+}
+
+.form input {
+
+    width:100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    
+}
+
+.form textarea {
+
+    width:100%;
+    margin-left: -10%;
+    border-radius: 0.5rem;
+}
+
+.form__nameData {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.form__contactData {
+
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-around;
+
+}
+
+.form__message {
+
+    display: flex;
+    padding: 1rem;
+
 }
 
 

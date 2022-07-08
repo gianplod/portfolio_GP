@@ -6,10 +6,11 @@
 
 /* ------------------------------------ BODY ------------------------------------ */ 
 body{
-    min-height: 100vh;
-    display: flex;
+    /* min-height: 100vh; */
+    /* display: flex;
     flex-direction: column;
-    background-color: #F5F5F5;
+    background-color: #F5F5F5; */
+
     
 }
 
@@ -21,11 +22,28 @@ body{
     background-position:top;
 }
 
+.layout {
+
+    display: grid;
+    grid-template-areas: "header header header"
+                         "main main main"
+                        "footer footer footer";
+    min-height:100vh;
+
+
+}
+
+
 /* ------------------------------------ HEADER ------------------------------------ */
+
+.header__layout {
+
+    grid-area: header;
+}
 
 
 .header__main {
-
+    
     display:flex;
     flex-direction: row;
     background-image:linear-gradient(#9a0414, #560303);
@@ -86,11 +104,50 @@ body{
     
 }
 
+.header__mobileMenu {
+
+    display: none;
+    padding-right:1rem;
+}
+
+.header__navList--mobile {
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+
+@media all and (max-width: 845px) {
+
+    .header__navList {
+
+        display: none;
+    }
+
+    .header__mobileMenu {
+
+        display: flex;
+    }
+
+    .header__logo img{
+
+        padding: 1rem;
+    
+}
+}
+
 /* ------------------------------------ MAIN ------------------------------------ */
+
+.main__layout {
+
+    grid-area: main;
+}
 
 .pageSection {
 
-    display: flex;
+    grid-area: main;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     margin-top: 5%;
@@ -101,8 +158,20 @@ body{
 .content__navPage {
 
     display: none; /* hidden for now */
+    font-weight: 600;
+    font-size: x-large;
+    
 }
 
+@media all and (max-width: 845px) {
+
+    .content__navPage {
+
+        display: block;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
 
 /* -------------- HOME -------------- */
 
@@ -147,6 +216,17 @@ body{
     text-align: center;
 }
 
+@media all and (max-width: 845px) {
+
+    .contentHome__welcomeText {
+
+        text-align: justify;
+        padding:0;
+        margin: 5rem auto;
+        width: 75%;
+    
+    }
+}
 
 
 /* -------------- ABOUT -------------- */
@@ -341,9 +421,12 @@ body{
 
 /* ------------------------------------ FOOTER ------------------------------------ */
 
-footer {
 
-    margin-top:auto;
+.footer__layout {
+
+    grid-area : footer;
+    margin-top: auto;
+
 }
 
 .footer__main {
@@ -368,4 +451,25 @@ footer {
 
     padding:0.5rem 2rem 0.5rem 2rem;
     width: 50px;
+}
+
+@media all and (max-width: 633px) {
+
+    .footer__main {
+
+        flex-direction: column;
+    }
+
+
+    .footer__icons img {
+
+        padding: 0.75rem;
+    }
+
+    .header__mobileMenu {
+
+        display: flex;
+        
+    }
+
 }

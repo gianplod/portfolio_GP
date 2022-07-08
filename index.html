@@ -23,83 +23,133 @@
 
 </head>
 
-<body class="body__homePage">
 
-    <!---------HEADER--------->
-    <header>
-        <!--Header structure and logo-->
-        <div class="header__main">
-            <div class="header__logo">
+    <body class="body__homePage">
 
-                <img src="./images/gpdev_logo.png" alt="gp Dev Logo">
-                <div>gP Development</div>
+        <!---------BODY LAYOUT--------->
+        <div class="layout">
+        <!---------HEADER--------->
+        <!--Header grid layout-->
+        <div class="header__layout">
+            <header>
 
-            </div>
-            <!--Nav menu-->
-            <nav>
-                <ul class="header__navList">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./page/about.html">About</a></li>
-                    <li><a href="./page/services.html">Services</a></li>
-                    <li><a href="./page/projects.html">Projects</a> </li>
-                    <li><a href="./page/contact.html">Contact</a></li>
+                <!--Header structure and logo-->
+                <div class="header__main">
+                    <div class="header__logo">
 
-                </ul>
-            </nav>
+                        <img src="./images/gpdev_logo.png" alt="gp Dev Logo">
+                        <div>gP Development</div>
+
+                    </div>
+                    <!--Nav menu-->
+                    <nav>
+                        <ul class="header__navList" id="nav-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./page/about.html">About</a></li>
+                            <li><a href="./page/services.html">Services</a></li>
+                            <li><a href="./page/projects.html">Projects</a> </li>
+                            <li><a href="./page/contact.html">Contact</a></li>
+
+                        </ul>
+                    </nav>
+                    <div class="header__mobileMenu">
+                    <img src="./images/menu.png" alt="Hamburguer!" onclick="displayMobileMenu()">
+                    </div>
+                </div>
         </div>
-    </header>
 
-    <!---------MAIN--------->
-    <main>
-        <section id="home">
-            <!--Content structure-->
-            <div class="contentHome">
-                <div class="contentHome__welcomeText">
-                    <!--Welcome paragraph-->
-                    <h2>Hello there!</h2>
+        </header>
+
+        <!---------MAIN--------->
+        <!---------Main layout--------->
+        <div class="main__layout">
+            <main>
+
+                <section id="home">
+
+                    <!--Content structure-->
+                    <div class="contentHome">
+                        <div class="contentHome__welcomeText">
+                            <!--Welcome paragraph-->
+                            <h2>Hello there!</h2>
+                            <p>
+                                My name is Gian. I’m a freelance developer focused in <strong>data analytics, low-code
+                                    and
+                                    web
+                                    development</strong>,
+                                with a clear goal in mind:
+                            </p>
+                            <!--Motto-->
+                            <p class="contentHome__motto">deliver value to my customers</p>
+
+                        </div>
+
+                        <div class="content__navPage">
+                            <p> Next: <a href="./page/about.html">About</a></p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+     
+        </main>
+        </div>
+
+        <!---------FOOTER--------->
+
+        <!---------footer layout--------->
+        <div class="footer__layout">
+            <footer>
+
+
+                <!--Footer structure-->
+                <div class="footer__main">
+                    <!--Social media icons-->
+                    <div class="footer__icons">
+                        <a href="https://www.linkedin.com/in/gianluca-plodari/" target="_blank"><img
+                                src="./images/linkedin_logo.png" alt="linkedin logo"></a>
+                        <a href="https://github.com/gianplod" target="_blank"><img src="./images/github_logo.png"
+                                alt="github logo"></a>
+                        <a href="https://www.instagram.com/gianplodari/" target="_blank"><img src="./images/ig_logo.png"
+                                alt="instagram logo"></a>
+                    </div>
+                    <!--Copyright notice-->
                     <p>
-                        My name is Gian. I’m a freelance developer focused in <strong>data analytics, low-code and web
-                            development</strong>,
-                        with a clear goal in mind:
+                        © 2022 gP Dev. All rights reserved.
                     </p>
-                    <!--Motto-->
-                    <p class="contentHome__motto">deliver value to my customers</p>
 
                 </div>
-
-            </div>
-
-            <div class="content__navPage">
-                Next: <a href="./page/about.html">About</a>
-            </div>
-        </section>
-
-
-
-    </main>
-
-    <!---------FOOTER--------->
-    <footer>
-        <!--Footer structure-->
-        <div class="footer__main">
-            <!--Social media icons-->
-            <div class="footer__icons">
-                <a href="https://www.linkedin.com/in/gianluca-plodari/" target="_blank"><img
-                        src="./images/linkedin_logo.png" alt="linkedin logo"></a>
-                <a href="https://github.com/gianplod" target="_blank"><img src="./images/github_logo.png"
-                        alt="github logo"></a>
-                <a href="https://www.instagram.com/gianplodari/" target="_blank"><img src="./images/ig_logo.png"
-                        alt="instagram logo"></a>
-            </div>
-            <!--Copyright notice-->
-            <p>
-                © 2022 gP Dev. All rights reserved.
-            </p>
-
         </div>
+        </footer>
+</div>
 
-    </footer>
+<script>
+    // function displayMobileMenu() {
 
+        
+    //     let mobileMenu = document.querySelector(".header__mobileMenu img");
+    //     let navLinks = document.querySelector("#nav-list")
+    //     if(mobileMenu.getAttribute('src') == "./images/menu.png") {
+
+    //         mobileMenu.setAttribute('src', "./images/pressed_menu.png");
+    //         navLinks.setAttribute('class', 'header__navList--mobile');
+    //     }
+    //     else {
+            
+    //         navLinks.setAttribute('class', '.header__navList');
+    //         mobileMenu.setAttribute('src', "./images/menu.png");
+             
+    //     };
+
+        
+        
+    //     console.log(navLinks);
+
+
+    // }
+</script>
 </body>
 
 </html>

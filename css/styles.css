@@ -408,6 +408,16 @@
     padding: 1rem;
 }
 
+
+@media all and (max-width: 845px) {
+
+    .contentProjects__listItem {
+
+        flex-direction: column;
+
+    }
+
+}
 /* -------------- CONTACT -------------- */
 
 
@@ -471,6 +481,41 @@
 
     display: flex;
     padding: 1rem;
+
+}
+
+@media all and (max-width: 845px) {
+
+    .form label {
+
+        width: 100%;
+        margin: 1rem auto 1rem auto
+    }
+
+    .form__nameData {
+
+        flex-direction: column;
+        padding: 0.5rem;
+
+    }
+
+    .form__contactData {
+
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .form__message {
+
+        flex-direction: column;
+        padding: 0.5rem;
+
+    }
+
+    .form textarea {
+
+        margin: auto;
+    }
 
 }
 

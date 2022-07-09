@@ -20,79 +20,100 @@
 </head>
 
 <body>
-    <header>
+    <!---------BODY LAYOUT--------->
+    <div class="layout">
+        <!---------HEADER--------->
+        <!--Header grid layout-->
+        <div class="header__layout">
+            <header>
+                <div class="header__main">
+                    <div class="header__logo">
 
-        <div class="header__main">
-            <div class="header__logo">
+                        <img src="../images/gpdev_logo.png" alt="gp Dev Logo">
+                        <div>gP Development</div>
 
-                <img src="../images/gpdev_logo.png" alt="gp Dev Logo">
-                <div>gP Development</div>
+                    </div>
+                    <nav>
+                        <ul class="header__navList">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./projects.html">Projects</a> </li>
+                            <li><a href="./contact.html">Contact</a></li>
 
-            </div>
-            <nav>
-                <ul class="header__navList">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./projects.html">Projects</a> </li>
-                    <li><a href="./contact.html">Contact</a></li>
-
-                </ul>
-            </nav>
+                        </ul>
+                    </nav>
+                    <div class="header__mobileMenu">
+                        <img src="../images/menu.png" alt="Hamburguer!" onclick="displayMobileMenu()">
+                    </div>
+                </div>
+            </header>
         </div>
-    </header>
+        <!---------MAIN--------->
+        <!---------Main layout--------->
+        <div class="main__layout">
+            <main>
+                <section id="services" class="pageSection">
+                    <div class="contentServices">
+                        <h1>Services</h1>
+                        <ul class="contentServices__list">
+                            <li class="contentServices__listDataAnalytics"><img src="../images/img_placeholder.png"
+                                    alt=""> Data
+                                Analytics <p>Lorem impsum sit amet, consectetur adipiscing elit. Donec nisl etiam enim,
+                                    mattis
+                                    purus, cursus magna consectetur
+                                    rhoncus. Pellentesque aliquet</p>
+                            </li>
+                            <li class="contentServices__listLowCode"><img src="../images/img_placeholder.png"
+                                    alt="">Low-code
+                                Development <p>Lorem impsum sit amet, consectetur adipiscing elit. Donec nisl etiam
+                                    enim, mattis
+                                    purus, cursus magna consectetur
+                                    rhoncus. Pellentesque aliquet</p>
+                            </li>
+                            <li class="contentServices__listWebDev"><img src="../images/img_placeholder.png" alt="">Web
+                                Development <p>Lorem impsum sit amet, consectetur adipiscing elit. Donec nisl etiam
+                                    enim, mattis
+                                    purus, cursus magna consectetur
+                                    rhoncus. Pellentesque aliquet</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-    <main>
-        <section id="services" class="pageSection">
-            <h1>Services</h1>
-            <div class="contentServices">
-                <ul class="contentServices__list">
-                    <li class="contentServices__listDataAnalytics"><img src="../images/img_placeholder.png" alt=""> Data
-                        Analytics <p>Lorem impsum sit amet, consectetur adipiscing elit. Donec nisl etiam enim, mattis
-                            purus, cursus magna consectetur
-                            rhoncus. Pellentesque aliquet</p>
-                    </li>
-                    <li class="contentServices__listLowCode"><img src="../images/img_placeholder.png" alt="">Low-code
-                        Development <p>Lorem impsum sit amet, consectetur adipiscing elit. Donec nisl etiam enim, mattis
-                            purus, cursus magna consectetur
-                            rhoncus. Pellentesque aliquet</p>
-                    </li>
-                    <li class="contentServices__listWebDev"><img src="../images/img_placeholder.png" alt="">Web
-                        Development <p>Lorem impsum sit amet, consectetur adipiscing elit. Donec nisl etiam enim, mattis
-                            purus, cursus magna consectetur
-                            rhoncus. Pellentesque aliquet</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <!-- for Mobile view-->
+                <div class="content__navPage">
+                    <p> Next: <a href="./projects.html">Projects</a></p>
+                    <img src="../images/next_arrow.png" alt="next">
+                </div>
 
-        <!-- for Mobile view-->
-        <div class="content__navPage">
-            Next: <a href="./projects.html">Projects</a>
+            </main>
         </div>
+        <!---------FOOTER--------->
 
-    </main>
+        <!---------footer layout--------->
+        <div class="footer__layout">
+            <footer>
+                <div class="footer__main">
 
-    <footer>
-        <div class="footer__main">
+                    <div class="footer__icons">
+                        <a href="https://www.linkedin.com/in/gianluca-plodari/" target="_blank"><img
+                                src="../images/linkedin_logo.png" alt="linkedin logo"></a>
+                        <a href="https://github.com/gianplod" target="_blank"><img src="../images/github_logo.png"
+                                alt="github logo"></a>
+                        <a href="https://www.instagram.com/gianplodari/" target="_blank"><img
+                                src="../images/ig_logo.png" alt="instagram logo"></a>
+                    </div>
 
-            <div class="footer__icons">
-                <a href="https://www.linkedin.com/in/gianluca-plodari/" target="_blank"><img
-                        src="../images/linkedin_logo.png" alt="linkedin logo"></a>
-                <a href="https://github.com/gianplod" target="_blank"><img src="../images/github_logo.png"
-                        alt="github logo"></a>
-                <a href="https://www.instagram.com/gianplodari/" target="_blank"><img src="../images/ig_logo.png"
-                        alt="instagram logo"></a>
-            </div>
+                    <p>
+                        © 2022 gP Dev. All rights reserved.
+                    </p>
 
-            <p>
-                © 2022 gP Dev. All rights reserved.
-            </p>
+                </div>
 
+            </footer>
         </div>
-
-    </footer>
-
+    </div>
 </body>
 
 </html>

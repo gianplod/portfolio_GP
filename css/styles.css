@@ -1,7 +1,8 @@
 /* ------------------------------------ RESET CSS ------------------------------------ */
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: content-box; }
 
 /* ------------------------------------ BODY ------------------------------------ */
 html,
@@ -25,6 +26,9 @@ body {
 .header__layout {
   grid-area: header; }
 
+.header__background {
+  background-image: linear-gradient(#9a0414, #560303); }
+
 .header__main {
   display: flex;
   flex-direction: row;
@@ -46,10 +50,13 @@ body {
   font-weight: lighter;
   color: white; }
 
+.header__logo p {
+  margin-bottom: 0; }
+
 .header__logo img {
   height: 4rem;
   width: 5rem;
-  padding: 2rem; }
+  padding-right: 1rem; }
 
 .header__navList {
   display: flex;
@@ -57,9 +64,8 @@ body {
   list-style: none; }
 
 .header__navList li {
-  padding: 1rem;
-  text-decoration: none;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  padding: 1rem; }
 
 .header__navList li:hover {
   animation: headShake;
@@ -69,22 +75,17 @@ body {
   text-decoration: none;
   color: #f5f5f5; }
 
-.header__mobileMenu {
-  display: none;
-  padding-right: 1rem; }
-
-.header__navList--mobile {
-  display: flex;
-  flex-direction: column;
-  background-color: white; }
+@media all and (min-width: 992px) {
+  .header__flex {
+    justify-content: flex-end; } }
 
 @media all and (max-width: 845px) {
-  .header__navList {
-    display: none; }
-  .header__mobileMenu {
-    display: flex; }
   .header__logo img {
     padding: 1rem; } }
+
+@media all and (max-width: 446px) {
+  .header__logo {
+    font-size: 0.9em; } }
 
 /* ------------------------------------ MAIN ------------------------------------ */
 .main__layout {
@@ -119,7 +120,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 5%; }
+  margin-top: auto; }
 
 .contentHome h2 {
   padding-bottom: 1rem; }
@@ -335,7 +336,8 @@ body {
   color: #f5f5f5; }
 
 .footer__main p {
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  margin-bottom: 0; }
 
 .footer__icons img {
   padding: 0.5rem 2rem 0.5rem 2rem;

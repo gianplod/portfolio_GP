@@ -105,6 +105,11 @@ body {
 
     }
 
+    &__navList button {
+
+        background-color: #D91B0C;
+    }
+
 }
 
 @media all and (min-width: 992px) {
@@ -147,6 +152,18 @@ body {
     }
 }
 
+@media all and (max-width: 357px) {
+
+    .header {
+
+        &__logo p {
+
+            display: none;
+        }
+    }
+}
+
+
 /* ------------------------------------ MAIN ------------------------------------ */
 
 .main__layout {
@@ -156,7 +173,7 @@ body {
 .pageSection {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	margin-top: 5%;
+	margin-top: auto;
 	padding: 2rem;
 }
 
@@ -275,7 +292,7 @@ body {
 	}
 
 	.pageSection h1 {
-		padding-top: 3rem;
+		// padding-top: 3rem;
 		text-align: center;
 	}
 }
@@ -388,11 +405,11 @@ body {
 }
 
 .form {
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 	border: solid 1px black;
 	border-radius: 1rem;
-	padding: 1rem;
+	padding: auto;
 	font-weight: 600;
 }
 

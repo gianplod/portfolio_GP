@@ -31,9 +31,9 @@
 
 </head>
 
-<body>
+<body class="form__container">
     <!---------BODY LAYOUT--------->
-    <div class="layout">
+    <div class="layout ">
         <!---------HEADER--------->
         <!--Header grid layout-->
         <div class="header__layout">
@@ -80,35 +80,59 @@
 
         <!---------MAIN--------->
         <!---------Main layout--------->
-        <div class="main__layout">
+        <div class="main__layout ">
 
             <main>
 
                 <section id="contact" class="pageSection">
                     <h1>Let's get in touch!</h1>
-                    <div class="container-fluid d-lg-flex flex-wrap">
-                    <div class="form-floating mb-3 col-lg-5">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Enter your first name">
-                        <label for="floatingInput">First Name</label>
+                    <div class="container-fluid"> 
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control  border border-2 border-secondary"
+                                    id="floatingInput" placeholder="Enter your first name">
+                                <label for="floatingInput">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating mb-3 ms-md-3">
+                                <input type="text" class="form-control border border-2 border-secondary"
+                                    id="floatingInput" placeholder="Enter your last name">
+                                <label for="floatingInput">Last Name</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-floating mb-3 ms-lg-5 col-lg-5">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Enter your last name">
-                        <label for="floatingInput">Last Name</label>
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control border border-2 border-secondary"
+                                    id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating mb-3 ms-md-3">
+                                <input type="tel" class="form-control border border-2 border-secondary"
+                                    id="floatingInput" placeholder="Enter your phone number"
+                                    pattern="[0-9]{2}-[0-9]{2}-[0-9]{8}">
+                                <label for="floatingInput">Phone Number</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-floating mb-3 col-lg-5">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                    <div class="row g-2">
+                        <div class="form-floating">
+                            <textarea class="form-control border border-2 border-secondary"
+                                placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px;"></textarea>
+                            <label for="floatingTextarea2">Message</label>
+                        </div>
                     </div>
-                    <div class="form-floating mb-3 ms-lg-5 col-lg-5">
-                        <input type="tel" class="form-control" id="floatingInput" placeholder="Enter your phone number" pattern="[0-9]{2}-[0-9]{2}-[0-9]{8}">
-                        <label for="floatingInput">Phone Number</label>
-                    </div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 100px;"></textarea>
-                        <label for="floatingTextarea2">Message</label>
+                    <div class="container-fluid d-flex justify-content-center justify-content-lg-end justify-content-sm-center">
+                    <button type="button" class="btn btn-primary m-4 form__button border-0 btn-lg">Submit</button>
                     </div>
                     </div>
+       
                 </section>
                 <section>
                     <!-- for Mobile view-->

@@ -1,8 +1,7 @@
 /* ------------------------------------ RESET CSS ------------------------------------ */
 * {
   padding: 0;
-  margin: 0;
-  box-sizing: content-box; }
+  margin: 0; }
 
 /* ------------------------------------ BODY ------------------------------------ */
 html,
@@ -55,7 +54,7 @@ body {
 
 .header__logo img {
   height: 4rem;
-  width: 5rem;
+  width: 6rem;
   padding-right: 1rem; }
 
 .header__navList {
@@ -81,10 +80,6 @@ body {
 @media all and (min-width: 992px) {
   .header__flex {
     justify-content: flex-end; } }
-
-@media all and (max-width: 845px) {
-  .header__logo img {
-    padding: 1rem; } }
 
 @media all and (max-width: 446px) {
   .header__logo {
@@ -272,57 +267,12 @@ body {
 #contact h1 {
   padding-bottom: 1rem; }
 
-.form {
-  border: solid 1px black;
-  border-radius: 1rem;
-  padding: auto;
-  font-weight: 600; }
+.form__button {
+  background-color: #D91B0C;
+  width: 150px; }
 
-.form label {
-  width: 20%;
-  padding: 0 0.5rem 0 0.5rem; }
-
-.form input {
-  width: 100%;
-  height: 2rem;
-  border-radius: 0.5rem; }
-
-.form textarea {
-  width: 100%;
-  margin-left: -10%;
-  border-radius: 0.5rem; }
-
-.form__nameData {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem; }
-
-.form__contactData {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  justify-content: space-around; }
-
-.form__message {
-  display: flex;
-  padding: 1rem; }
-
-@media all and (max-width: 845px) {
-  .form label {
-    width: 100%;
-    margin: 1rem auto 1rem auto; }
-  .form__nameData {
-    flex-direction: column;
-    padding: 0.5rem; }
-  .form__contactData {
-    flex-direction: column;
-    padding: 0.5rem; }
-  .form__message {
-    flex-direction: column;
-    padding: 0.5rem; }
-  .form textarea {
-    margin: auto; } }
+.form__button:focus {
+  background-color: #000000; }
 
 /* ------------------------------------ FOOTER ------------------------------------ */
 .footer__layout {
@@ -345,12 +295,13 @@ body {
 
 .footer__icons img {
   padding: 0.5rem 2rem 0.5rem 2rem;
-  width: 50px; }
+  width: 110px; }
 
 @media all and (max-width: 633px) {
   .footer__main {
     flex-direction: column; }
   .footer__icons img {
-    padding: 0.75rem; }
+    padding: 0.75rem;
+    width: 75px; }
   .header__mobileMenu {
     display: flex; } }

@@ -1,26 +1,4 @@
-/* ------------------------------------ RESET CSS ------------------------------------ */
-* {
-  padding: 0;
-  margin: 0; }
-
-/* ------------------------------------ BODY ------------------------------------ */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden; }
-
-.body__homePage {
-  background-image: url("../images/home_background_2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top; }
-
-.layout {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  min-height: 100vh;
-  font-family: 'Montserrat', sans-serif; }
-
+/* Import overall layout styles */
 /* ------------------------------------ HEADER ------------------------------------ */
 .header__layout {
   grid-area: header; }
@@ -83,6 +61,59 @@ body {
   .header__logo p {
     display: none; } }
 
+/* ------------------------------------ FOOTER ------------------------------------ */
+.footer__layout {
+  grid-area: footer;
+  margin-top: auto; }
+
+.footer__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-image: linear-gradient(360deg,rgb(2, 2, 2), rgb(20, 13, 13)); */
+  align-items: center;
+  background-image: linear-gradient(360deg, #9a0414, #560303);
+  font-family: 'Montserrat', sans-serif;
+  color: #f5f5f5; }
+  .footer__main p {
+    padding: 0.5rem;
+    margin-bottom: 0; }
+
+.footer__icons img {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  width: 110px; }
+
+@media all and (max-width: 633px) {
+  .footer__main {
+    flex-direction: column; }
+  .footer__icons img {
+    padding: 0.75rem;
+    width: 75px; }
+  .footer_mobileMenu {
+    display: flex; } }
+
+@media all and (max-width: 300px) {
+  .footer__main p {
+    text-align: center; } }
+
+/* ------------------------------------ BODY ------------------------------------ */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+.body__homePage {
+  background-image: url("../images/home_background_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; }
+
+.layout {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif; }
+
 /* ------------------------------------ MAIN ------------------------------------ */
 .main__layout {
   grid-area: main; }
@@ -109,6 +140,7 @@ body {
     text-align: center;
     margin-bottom: 5rem; } }
 
+/* Import pages styles */
 /* -------------- HOME -------------- */
 .contentHome {
   display: flex;
@@ -270,37 +302,7 @@ body {
   .form__button:focus {
     background-color: #000000; }
 
-/* ------------------------------------ FOOTER ------------------------------------ */
-.footer__layout {
-  grid-area: footer;
-  margin-top: auto; }
-
-.footer__main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* background-image: linear-gradient(360deg,rgb(2, 2, 2), rgb(20, 13, 13)); */
-  align-items: center;
-  background-image: linear-gradient(360deg, #9a0414, #560303);
-  font-family: 'Montserrat', sans-serif;
-  color: #f5f5f5; }
-  .footer__main p {
-    padding: 0.5rem;
-    margin-bottom: 0; }
-
-.footer__icons img {
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  width: 110px; }
-
-@media all and (max-width: 633px) {
-  .footer__main {
-    flex-direction: column; }
-  .footer__icons img {
-    padding: 0.75rem;
-    width: 75px; }
-  .footer_mobileMenu {
-    display: flex; } }
-
-@media all and (max-width: 300px) {
-  .footer__main p {
-    text-align: center; } }
+/* ------------------------------------ RESET CSS ------------------------------------ */
+* {
+  padding: 0;
+  margin: 0; }

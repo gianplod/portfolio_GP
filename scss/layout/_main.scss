@@ -1,0 +1,61 @@
+/* ------------------------------------ BODY ------------------------------------ */
+
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.body {
+	&__homePage {
+		background-image: url("../images/home_background_2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+}
+
+.layout {
+	display: grid;
+	grid-template-areas: "header header header" "main main main" "footer footer footer";
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* ------------------------------------ MAIN ------------------------------------ */
+
+.main__layout {
+	grid-area: main;
+}
+
+.pageSection {
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: auto;
+	padding: 2rem;
+}
+
+.content__navPage {
+	display: none;
+	font-weight: 600;
+	font-size: x-large;
+
+	& p a {
+		text-decoration: none;
+		color: #eb3223;
+	}
+
+	& img {
+		margin-top: 2rem;
+	}
+}
+
+@media all and (max-width: 845px) {
+	.content__navPage {
+		display: block;
+		text-align: center;
+		margin-bottom: 5rem;
+	}
+}

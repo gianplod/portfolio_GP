@@ -1,0 +1,50 @@
+/* -------------- HOME -------------- */
+
+.contentHome {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: auto;
+
+	& h2 {
+		padding-bottom: 1rem;
+	}
+	&__motto {
+		color: #d61225;
+		font-style: italic;
+		font-weight: 400;
+		font-size: 1.1em;
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	&__welcomeText {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.7em;
+		width: 50%;
+		text-align: justify;
+		margin: 0.5rem;
+		padding: 2rem 2rem 6rem 4rem;
+		line-height: 1.8em;
+		color: #000000;
+	}
+
+	& h2 {
+		animation: lightSpeedInLeft;
+		animation-duration: 2s;
+	}
+}
+@media all and (max-width: 845px) {
+	.contentHome {
+		&__welcomeText {
+			text-align: justify;
+			padding: 0;
+			margin: 5rem auto;
+			width: 75%;
+		}
+
+		& h2 {
+			text-align: center;
+		}
+	}
+}

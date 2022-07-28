@@ -1,0 +1,49 @@
+/* -------------- PROJECTS -------------- */
+
+.contentProjects {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+
+	& h3 {
+		margin: 2rem 0 1rem 0;
+		text-align: center;
+	}
+
+	& img {
+		height: 200px;
+	}
+
+	&__listItem {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		align-items: center;
+
+		& p {
+			text-align: justify;
+			padding: 1rem;
+		}
+	}
+}
+
+@media all and (max-width: 845px) {
+	.contentProjects {
+		&__listItem {
+			flex-direction: column;
+		}
+
+		& ul {
+			padding-left: 0;
+		}
+	}
+}
+
+@media all and (max-width: 478px) {
+	.contentProjects {
+		& img {
+			height: 75%;
+			width: 75%;
+		}
+	}
+}

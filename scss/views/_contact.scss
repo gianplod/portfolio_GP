@@ -1,0 +1,16 @@
+/* -------------- CONTACT -------------- */
+
+#contact {
+	& h1 {
+		padding-bottom: 1rem;
+	}
+}
+
+.form__button {
+	background-color: #d91b0c;
+	width: 150px;
+
+	&:focus {
+		background-color: #000000;
+	}
+}

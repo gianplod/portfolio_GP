@@ -30,7 +30,7 @@
 	}
 }
 
-@media all and (max-width: 633px) {
+@include respond(medium) {
 	.footer {
 		&__main {
 			flex-direction: column;
@@ -47,7 +47,7 @@
 	}
 }
 
-@media all and (max-width: 300px) {
+@include respond(small) {
 	.footer {
 		&__main {
 			& p {

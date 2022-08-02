@@ -34,8 +34,24 @@
 		animation-duration: 2s;
 	}
 }
-@media all and (max-width: 845px) {
-	.contentHome {
+// @media all and (max-width: 845px) {
+// 	.contentHome {
+// 		&__welcomeText {
+// 			text-align: justify;
+// 			padding: 0;
+// 			margin: 5rem auto;
+// 			width: 75%;
+// 		}
+
+// 		& h2 {
+// 			text-align: center;
+// 		}
+// 	}
+// }
+
+@include respond(medium) {
+
+    .contentHome {
 		&__welcomeText {
 			text-align: justify;
 			padding: 0;
@@ -47,4 +63,5 @@
 			text-align: center;
 		}
 	}
+
 }

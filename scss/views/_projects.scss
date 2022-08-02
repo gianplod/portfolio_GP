@@ -27,7 +27,7 @@
 	}
 }
 
-@media all and (max-width: 845px) {
+@include respond(medium) {
 	.contentProjects {
 		&__listItem {
 			flex-direction: column;
@@ -39,7 +39,7 @@
 	}
 }
 
-@media all and (max-width: 478px) {
+@include respond(small) {
 	.contentProjects {
 		& img {
 			height: 75%;

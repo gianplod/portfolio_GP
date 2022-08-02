@@ -35,7 +35,7 @@
 	}
 }
 
-@media all and (max-width: 478px) {
+@include respond(small){
 	.contentAbout {
 		&__text {
 			width: 100%;

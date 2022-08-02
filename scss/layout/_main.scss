@@ -52,7 +52,7 @@ body {
 	}
 }
 
-@media all and (max-width: 845px) {
+@include respond(medium){
 	.content__navPage {
 		display: block;
 		text-align: center;

@@ -68,13 +68,13 @@
 	}
 }
 
-@media all and (min-width: 992px) {
+@include respond(large) {
 	.header__flex {
 		justify-content: flex-end;
 	}
 }
 
-@media all and (max-width: 446px) {
+@include respond(small) {
 	.header {
 		&__logo {
 			font-size: 0.9em;
@@ -82,7 +82,7 @@
 	}
 }
 
-@media all and (max-width: 357px) {
+@include respond(extra-small) {
 	.header {
 		&__logo p {
 			display: none;

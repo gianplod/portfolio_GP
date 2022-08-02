@@ -1,3 +1,9 @@
+/* Import utilities and base */
+/* ------------------------------------ RESET CSS ------------------------------------ */
+* {
+  padding: 0;
+  margin: 0; }
+
 /* Import overall layout styles */
 /* ------------------------------------ HEADER ------------------------------------ */
 .header__layout {
@@ -53,7 +59,7 @@
   .header__flex {
     justify-content: flex-end; } }
 
-@media all and (max-width: 446px) {
+@media all and (max-width: 478px) {
   .header__logo {
     font-size: 0.9em; } }
 
@@ -83,7 +89,7 @@
   padding: 0.5rem 2rem 0.5rem 2rem;
   width: 110px; }
 
-@media all and (max-width: 633px) {
+@media all and (max-width: 845px) {
   .footer__main {
     flex-direction: column; }
   .footer__icons img {
@@ -92,7 +98,7 @@
   .footer_mobileMenu {
     display: flex; } }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 478px) {
   .footer__main p {
     text-align: center; } }
 
@@ -231,8 +237,8 @@ body {
     width: 75%;
     padding-top: 1rem; }
   .contentServices__list img {
-    height: 75%;
-    width: 75%; }
+    height: 65%;
+    width: 65%; }
 
 .contentServices__listDataAnalytics {
   display: flex;
@@ -257,7 +263,7 @@ body {
     .contentServices__list li {
       padding-top: 2rem; } }
 
-@media all and (max-width: 1121px) and (min-width: 500px) {
+@media all and (max-width: 478px) {
   .contentServices__list img {
     height: 50%;
     width: 50%; } }
@@ -301,8 +307,3 @@ body {
   width: 150px; }
   .form__button:focus {
     background-color: #000000; }
-
-/* ------------------------------------ RESET CSS ------------------------------------ */
-* {
-  padding: 0;
-  margin: 0; }

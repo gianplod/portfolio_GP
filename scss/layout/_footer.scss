@@ -53,10 +53,15 @@
 			flex-direction: column;
 		}
 
-		&__icons img {
+		&__icons {
+
+            & img {
 			padding: 0.75rem;
-			width: 75px;
+            max-width: 75px;
+
 		}
+
+        } 
 
 		&_mobileMenu {
 			display: flex;

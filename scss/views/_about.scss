@@ -20,7 +20,7 @@
 	}
 }
 
-@media all and (max-width: 845px) {
+@include respond(medium){
 	.contentAbout {
 		flex-direction: column-reverse;
 

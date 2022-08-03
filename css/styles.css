@@ -237,7 +237,7 @@ body {
   padding-top: 1rem;
   padding-left: 0;
   align-items: flex-end; }
-  .contentServices__list span {
+  .contentServices__list h3 {
     text-align: center;
     margin-top: 1rem; }
   .contentServices__list p {
@@ -312,8 +312,12 @@ body {
 #contact h1 {
   padding-bottom: 1rem; }
 
-.form__button {
-  background-color: #d91b0c;
-  width: 150px; }
-  .form__button:focus {
+.form__button, .form__button--submit, .form__button--reset {
+  width: 150px;
+  margin: 1rem 0.5rem 1rem 0.5rem !important; }
+  .form__button:focus, .form__button--submit:focus, .form__button--reset:focus {
+    background-color: #4d4b4b; }
+  .form__button--submit {
     background-color: #000000; }
+  .form__button--reset {
+    background-color: #d91b0c; }

@@ -7,21 +7,21 @@
         }
     }
 
-    @if $breakpoint == large {
+    @else if $breakpoint == large {
         @media all and (min-width: 992px) {
             @content;
         }
 
     }
 
-    @if $breakpoint == medium {
+    @else if $breakpoint == medium {
 
         @media all and (max-width: 845px) {
             @content;
         }
     }
 
-    @if $breakpoint == small {
+    @else if $breakpoint == small {
 
         @media all and (max-width: 478px) {
 
@@ -29,7 +29,7 @@
         }
     }
 
-    @if $breakpoint == extra-small {
+    @else {
 
         @media all and (max-width: 357px) {
 

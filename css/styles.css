@@ -76,7 +76,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background-image: linear-gradient(360deg,rgb(2, 2, 2), rgb(20, 13, 13)); */
   align-items: center;
   background-image: linear-gradient(360deg, #9a0414, #560303);
   font-family: 'Montserrat', sans-serif;
@@ -86,8 +85,19 @@
     margin-bottom: 0; }
 
 .footer__icons img {
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  width: 110px; }
+  padding: 0.5rem 2rem 0.5rem 2rem; }
+
+.footer__icons-ldn {
+  content: url("../images/linkedin_logo.png");
+  max-width: 110px; }
+
+.footer__icons-ghb {
+  content: url("../images/github_logo.png");
+  max-width: 110px; }
+
+.footer__icons-igm {
+  content: url("../images/ig_logo.png");
+  max-width: 110px; }
 
 @media all and (max-width: 845px) {
   .footer__main {

@@ -163,8 +163,10 @@ body {
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   margin-top: auto; }
-  .contentHome h2 {
-    padding-bottom: 1rem; }
+  .contentHome h1 {
+    padding-bottom: 1rem;
+    animation: lightSpeedInLeft;
+    animation-duration: 2s; }
   .contentHome__motto {
     color: #d61225;
     font-style: italic;
@@ -181,9 +183,6 @@ body {
     padding: 2rem 2rem 6rem 4rem;
     line-height: 1.8em;
     color: #000000; }
-  .contentHome h2 {
-    animation: lightSpeedInLeft;
-    animation-duration: 2s; }
 
 @media all and (max-width: 845px) {
   .contentHome__welcomeText {
@@ -191,9 +190,9 @@ body {
     padding: 0;
     margin: 5rem auto;
     width: 75%; }
-  .contentHome h2 {
+  .contentHome h1 {
     text-align: center;
-    font-size: larger; } }
+    font-size: 1.5em; } }
 
 /* -------------- ABOUT -------------- */
 .contentAbout {

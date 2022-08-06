@@ -6,8 +6,10 @@
 	font-family: 'Montserrat', sans-serif;
 	margin-top: auto;
 
-	& h2 {
+	& h1 {
 		padding-bottom: 1rem;
+		animation: lightSpeedInLeft;
+		animation-duration: 2s;
 	}
 	&__motto {
 		color: #d61225;
@@ -28,16 +30,10 @@
 		line-height: 1.8em;
 		color: #000000;
 	}
-
-	& h2 {
-		animation: lightSpeedInLeft;
-		animation-duration: 2s;
-	}
 }
 
 @include respond(medium) {
-
-    .contentHome {
+	.contentHome {
 		&__welcomeText {
 			text-align: justify;
 			padding: 0;
@@ -45,10 +41,9 @@
 			width: 75%;
 		}
 
-		& h2 {
+		& h1 {
 			text-align: center;
-            font-size: larger;
+			font-size: 1.5em;
 		}
 	}
-
 }

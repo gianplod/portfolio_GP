@@ -19,13 +19,13 @@
 
 	&--submit {
 		@extend .form__button;
-		background-image: linear-gradient(90deg, #9a0414, #560303);
+		background-image: $submit-button-background;
 
 	}
 
 	&--reset {
 		@extend .form__button;
-		background-image: linear-gradient(90deg, #560303, #9a0414);
+		background-image: $reset-button-background;
 
 	}
 }

@@ -3,7 +3,6 @@
 .contentHome {
 	display: flex;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
 	margin-top: auto;
 
 	& h1 {
@@ -12,7 +11,7 @@
 		animation-duration: 2s;
 	}
 	&__motto {
-		color: #d61225;
+		color: $emphasis-color;
 		font-style: italic;
 		font-weight: 400;
 		font-size: 1.1em;
@@ -21,14 +20,12 @@
 	}
 
 	&__welcomeText {
-		font-family: 'Montserrat', sans-serif;
 		font-size: 1.7em;
 		width: 50%;
 		text-align: justify;
 		margin: 0.5rem;
 		padding: 2rem 2rem 6rem 4rem;
 		line-height: 1.8em;
-		color: #000000;
 	}
 }
 

@@ -1,9 +1,11 @@
 /* Import utilities and base */
+/* Colors */
 /* ------------------------------------ RESET CSS ------------------------------------ */
 * {
   padding: 0;
   margin: 0; }
 
+/* Font parameters */
 /* Import overall layout styles */
 /* ------------------------------------ BODY ------------------------------------ */
 html,
@@ -21,7 +23,8 @@ body {
   display: grid;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  color: #000; }
 
 /* ------------------------------------ MAIN ------------------------------------ */
 .main__layout {
@@ -29,7 +32,8 @@ body {
 
 .pageSection {
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
   margin-top: auto;
   padding: 2rem; }
 
@@ -39,7 +43,7 @@ body {
   font-size: x-large; }
   .content__navPage p a {
     text-decoration: none;
-    color: #eb3223; }
+    color: #d61225; }
   .content__navPage img {
     margin-top: 2rem; }
 
@@ -59,11 +63,9 @@ body {
 .header__main {
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient(#9a0414, #560303);
   height: 5rem;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   position: fixed; }
 
@@ -121,7 +123,6 @@ body {
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(360deg, #9a0414, #560303);
-  font-family: 'Montserrat', sans-serif;
   color: #f5f5f5; }
   .footer__main p {
     padding: 1rem;
@@ -160,7 +161,6 @@ body {
 .contentHome {
   display: flex;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
   margin-top: auto; }
   .contentHome h1 {
     padding-bottom: 1rem;
@@ -174,14 +174,12 @@ body {
     margin-top: 2rem;
     text-align: center; }
   .contentHome__welcomeText {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.7em;
     width: 50%;
     text-align: justify;
     margin: 0.5rem;
     padding: 2rem 2rem 6rem 4rem;
-    line-height: 1.8em;
-    color: #000000; }
+    line-height: 1.8em; }
 
 @media all and (max-width: 845px) {
   .contentHome__welcomeText {

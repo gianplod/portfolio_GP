@@ -7,9 +7,11 @@
 
 /* Import overall layout styles */
 
+@import "./layout/body";
+@import "./layout/main";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/main";
+
 
 /* Import pages styles */
 

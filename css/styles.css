@@ -5,6 +5,50 @@
   margin: 0; }
 
 /* Import overall layout styles */
+/* ------------------------------------ BODY ------------------------------------ */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+.body__homePage {
+  background-image: url("../images/home_background_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; }
+
+.layout {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif; }
+
+/* ------------------------------------ MAIN ------------------------------------ */
+.main__layout {
+  grid-area: main; }
+
+.pageSection {
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: auto;
+  padding: 2rem; }
+
+.content__navPage {
+  display: none;
+  font-weight: 600;
+  font-size: x-large; }
+  .content__navPage p a {
+    text-decoration: none;
+    color: #eb3223; }
+  .content__navPage img {
+    margin-top: 2rem; }
+
+@media all and (max-width: 992px) {
+  .content__navPage {
+    display: block;
+    text-align: center;
+    margin-bottom: 5rem; } }
+
 /* ------------------------------------ HEADER ------------------------------------ */
 .header__layout {
   grid-area: header; }
@@ -80,7 +124,7 @@
   font-family: 'Montserrat', sans-serif;
   color: #f5f5f5; }
   .footer__main p {
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 0; }
 
 .footer__icons img {
@@ -110,50 +154,6 @@
 @media all and (max-width: 478px) {
   .footer__main p {
     text-align: center; } }
-
-/* ------------------------------------ BODY ------------------------------------ */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden; }
-
-.body__homePage {
-  background-image: url("../images/home_background_2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top; }
-
-.layout {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  min-height: 100vh;
-  font-family: 'Montserrat', sans-serif; }
-
-/* ------------------------------------ MAIN ------------------------------------ */
-.main__layout {
-  grid-area: main; }
-
-.pageSection {
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: auto;
-  padding: 2rem; }
-
-.content__navPage {
-  display: none;
-  font-weight: 600;
-  font-size: x-large; }
-  .content__navPage p a {
-    text-decoration: none;
-    color: #eb3223; }
-  .content__navPage img {
-    margin-top: 2rem; }
-
-@media all and (max-width: 992px) {
-  .content__navPage {
-    display: block;
-    text-align: center;
-    margin-bottom: 5rem; } }
 
 /* Import pages styles */
 /* -------------- HOME -------------- */

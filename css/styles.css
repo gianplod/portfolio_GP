@@ -11,7 +11,8 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  /* prevent scrolling on axis x */ }
 
 .body__homePage {
   background-image: url("../images/home_background_2.jpg");
@@ -270,10 +271,10 @@ body {
     .contentServices__list li {
       padding-top: 2rem; } }
 
-@media all and (max-width: 478px) {
+@media all and (max-width: 357px) {
   .contentServices__list img {
-    height: 50%;
-    width: 50%; } }
+    height: 70%;
+    width: 70%; } }
 
 /* -------------- PROJECTS -------------- */
 .contentProjects {

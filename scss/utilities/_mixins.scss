@@ -2,13 +2,13 @@
 
     @if $breakpoint == extra-large {
 
-        @media all and (max-width: 1122px) {
+        @media all and (max-width: 1280px) {
             @content;
         }
     }
 
     @else if $breakpoint == large {
-        @media all and (min-width: 992px) {
+        @media all and (max-width: 992px) {
             @content;
         }
 

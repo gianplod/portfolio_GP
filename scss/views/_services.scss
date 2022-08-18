@@ -37,7 +37,7 @@
 		}
 	}
 }
-@include respond(extra-large) {
+@include respond(large) {
 	.contentServices {
 		& h1 {
 			text-align: center;
